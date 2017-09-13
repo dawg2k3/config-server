@@ -1,6 +1,6 @@
 ---
 applications:
-- name: config-server  
+- name: configserver  
   instances: 1
   memory: 750M
   buildpack: java_buildpack
