@@ -2,8 +2,8 @@ build_task: pipelines/gradle/tasks/gradle-assemble.yml # don't change
 deploy_dev_task: pipelines/cf/tasks/blue-green-deploy.yml # don't change
 
 # set this to '<first_initial><lastname>-config' ex: sgreenberg-config
-app_name: config-server
-jar_name: relka-config-server
+app_name: relka-configserver
+jar_name: relka-configserver
 
 # https url of your config app github fork.  ex: https://github.com/spgreenberg/config-server.git
 github_app_repo_uri: https://github.com/dawg2k3/config-server.git
@@ -17,11 +17,11 @@ version_bucket: rscale-training-bucket # don't change
 version_bucket_region_name: us-west-2 # don't change
 
 # set to '<first_initial><lastname>-config-version'.  ex: sgreenberg-config-version
-version_key: relka-config-server-version
+version_key: relka-configserver-version
 initial_version: 0.0.1
 
 # set to '<first_initial><lastname>-config-(.*).jar'.  ex: sgreenberg-config-(.*).jar
-artifact_regexp: relka-config-server(.*).jar
+artifact_regexp: relka-config(.*).jar
 artifact_bucket: rscale-training-bucket # don't change
 artifact_bucket_region_name: us-west-2 # don't change
 
@@ -32,7 +32,7 @@ cf_dev_organization: rscale-training-2
 # set to your space
 cf_dev_space: rameshwar.elka@cgi.com
 # set to 'config-<first_initial><lastname>'. ex: config-sgreenberg
-cf_dev_hostname: config-server-relka
+cf_dev_hostname: configserver-relka
 # set to the apps domain for your CF
 cf_dev_domain: cfapps.io
 # set to the dev manifest path in your config app repository. ex: dev-manifest.yml
