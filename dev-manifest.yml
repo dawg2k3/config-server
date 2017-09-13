@@ -1,9 +1,9 @@
 ---
 applications:
-- name: ramconfigserver  
+- name: config-server  
   instances: 1
   memory: 750M
   buildpack: java_buildpack
   services:
-   - my-config-service
+   - local-config-service
      
