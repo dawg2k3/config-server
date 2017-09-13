@@ -2,7 +2,7 @@ build_task: pipelines/gradle/tasks/gradle-assemble.yml # don't change
 deploy_dev_task: pipelines/cf/tasks/blue-green-deploy.yml # don't change
 
 # set this to '<first_initial><lastname>-config' ex: sgreenberg-config
-app_name: relka-configserver
+app_name: config-server
 jar_name: relka-configserver
 
 # https url of your config app github fork.  ex: https://github.com/spgreenberg/config-server.git
@@ -21,7 +21,7 @@ version_key: relka-configserver-version
 initial_version: 0.0.1
 
 # set to '<first_initial><lastname>-config-(.*).jar'.  ex: sgreenberg-config-(.*).jar
-artifact_regexp: relka-config(.*).jar
+artifact_regexp: relka-configserver-(.*).jar
 artifact_bucket: rscale-training-bucket # don't change
 artifact_bucket_region_name: us-west-2 # don't change
 
